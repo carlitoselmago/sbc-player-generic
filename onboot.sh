@@ -6,7 +6,7 @@ if [ "$_IP" ]; then
   printf "My IP address is %s\n" "$_IP"
 fi
 
-$HOME/automount_usb.sh
+$HOME/sbc-player-generic/automount_usb.sh
 sleep 5
 cd $HOME
 
@@ -30,6 +30,6 @@ fi
 #while ! pgrep "Xorg" > /dev/null; do
 #  sleep 1
 #done
-mpv --loop $HOME/video.mp4
+mpv --loop --fs $HOME/video.mp4
 #gst-launch-1.0 playbin uri=file:///home/pi/video.mp4
 

@@ -14,3 +14,10 @@ sudo crontab -e
 and place 
 
 @reboot /locationofthisrepo/onboot.sh
+
+## download a sample video
+
+```
+wget https://github.com/turingmachine/omxplayer-sync/raw/master/synctest.mp4
+mv synctest.mp4 $HOME/video.mp4 
+```
